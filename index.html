@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript">
+        var rev = "fwd";
+        function titlebar(val) {
+            var msg = "emo username gen!";
+            var res = " ";
+            var speed = 100;
+            var pos = val;
+
+            msg = "⋆<0xE2><0x8B><0x91>⋆ " + msg + " ⋆<0xE2><0x8B><0x91>⋆";
+            var le = msg.length;
+            if (rev == "fwd") {
+                if (pos < le) {
+                    pos = pos + 1;
+                    scroll = msg.substr(0, pos);
+                    document.title = scroll;
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                } else {
+                    rev = "bwd";
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                }
+            } else {
+                if (pos > 0) {
+                    pos = pos - 1;
+                    var ale = le - pos;
+                    scrol = msg.substr(ale, le);
+                    document.title = scrol;
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                } else {
+                    rev = "fwd";
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                }
+            }
+        }
+
+        titlebar(0);
+    </script>
+    <script>
+        // Function to replace shortcut with GIF
+        document.getElementById("text")?.innerHTML = document.getElementById("text")?.innerHTML.replace(":wine:", '<img src="wine emoji.gif" alt="drink" />');
+    </script>
+    <script src="https://chattable.neocities.org/scripts/main.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css?family=Megrim|Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> emo username gen!! </title>
+    <link id="theme" rel="stylesheet" href="style.css">
+    <style>
+        #usernameDisplay {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        #generateButton {
+            display: block; /* Block display to take up the full width */
+    background: #783858;
+    text-decoration: none;
+    padding: 5px; /* Padding inside the menu link */
+    width: 100%; /* Fill the sidebar's width */
+    line-height: 20px; /* Adjust line-height for better vertical alignment */
+    font: normal 12px monospace;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px ridge #783858;
+    color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/8QmPCrC7uXw?autoplay=1&loop=1&controls=1&playlist=8QmPCrC7uXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy">
+        <img src="https://64.media.tumblr.com/725d75399dfa2028a63a3d557245c670/0ff738aae3bed445-d7/s100x200/3f4d7e97ad1dda2998420739f7f8ccdd91af0597.png" class="center">
+    </iframe>
+</div>
+
+</div>
+
+<div id="content">
+    <div class="contenttitle">emo username generator !</div><br>
+    <button id="generateButton" onclick="generateAndDisplay()">generate</button>
+    <div id="usernameDisplay"></div>
+</div>
+
+
+</body>
+</html>
