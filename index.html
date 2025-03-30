@@ -9,7 +9,7 @@
             var speed = 100;
             var pos = val;
 
-            msg = "⋆<0xE2><0x8B><0x91>⋆ " + msg + " ⋆<0xE2><0x8B><0x91>⋆";
+            msg = "--- " + msg + " ---";
             var le = msg.length;
             if (rev == "fwd") {
                 if (pos < le) {
@@ -95,11 +95,12 @@
 </div>
 
 <div id="content">
-    <div class="contenttitle">emo username generator !</div><br>
-    <button id="generateButton" onclick="generateAndDisplay()">generate</button>
+    <div class="contenttitle">emo username generator!</div>
+    <button id="generateButton" onclick="generateAndDisplay()">generate!</button>
     <div id="usernameDisplay"></div>
 </div>
 
+<script src="script.js"></script>
 
 </body>
 </html>

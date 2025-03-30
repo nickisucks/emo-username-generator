@@ -1,4 +1,5 @@
 
+
     function generateUsername(options) {
         let username = "";
         const prefixes = options.prefixes || [""];
@@ -25,14 +26,16 @@
         const usernameOptions = {
             prefixes: ["xX", "Xx", ""],
             suffixes: ["xX", "Xx", ""],
-            words: ["t0xic", "molotov", "vendetta", "l0ve", "junkie", "3cho", "v0id", "kn1vess", "cyber", "velvet", "static","veil", "pierced","circuit","girl","b0y","cemetery","rats","kerosene","rawr","decibel","phantom", "shadow", "crimson", "velvet", "midnight", "ashes", "tears", "whisper", "silence", "heartache", "solitude",
+            words: [
+"t0xic", "molotov", "vendetta", "l0ve", "junkie", "3cho", "v0id", "kn1vess", "cyber", "velvet", "static","veil", "pierced","circuit","girl","b0y","cemetery","rats","kerosene","rawr","decibel","phantom", "shadow", "crimson", "velvet", "midnight", "ashes", "tears", "whisper", "silence", "heartache", "solitude",
                 "despair", "angst", "razor", "bleed", "veil", "sorrow", "broken", "static", "decay", "fade",
                 "pixel", "cyber", "gl1tch", "neon", "circuit", "riot", "synth", "v0ltage", "sparkle", "scene", "kandi", "fuzz", "phantom", "specter", "eclipse", "raven",
                 "serpent", "onyx", "obsidian", "twilight", "n0cturne", "wraith", "hex", "cursed", "witch", "gloom",
                 "flame", "storm", "frost", "nova", "ru1n", "hav0c", "tempest", "rebel", "vandal",
-                "chaos", "rage", "fallen", "l0st"],
-            wordCount: Math.floor(Math.random() * 3) + 1, // 1 to 3 words
-            wordSeparator: Math.random() < 0.5 ? "_" : "", // 50% chance of underscore
+                "chaos", "rage", "fallen", "l0st"
+            ],
+            wordCount: Math.floor(Math.random() * 3) + 1,
+            wordSeparator: Math.random() < 0.5 ? "_" : "",
         };
 
         const username = generateUsername(usernameOptions);
